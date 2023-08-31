@@ -1,0 +1,20 @@
+azure:
+    to_register_model: False
+    to_use_pretrained_model: True
+    to_register_env: False
+
+    pretrained_model_url: "https://aka.ms/bidaf-9-model"
+    model_file_path: "./models"
+    model_file: "model.onnx"
+    alternative_model_file: "model_alternative.pkl"
+    new_model_name: "bidaf_onnx"
+    registered_model_name: "bidaf_onnx"
+    
+    env_path: "./model_requirements.txt"
+    env_name: "onnxruntime_env"
+    scoring_script: "./src/azure/scoring.py"
+    
+    port: 6789
+    deployed_model_name: "text-comprehension-tltk"
+    cpu_cores: 1
+    memory_gb: 1

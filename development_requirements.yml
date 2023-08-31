@@ -1,0 +1,32 @@
+name: pytorch_cuda_env
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - pip
+  - python=3.9.0
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=11.7
+  - pip:
+      - ipykernel
+      - PySoundFile
+      - pytorch-lightning
+      - torchmetrics
+      - tqdm
+      - numpy
+      - pandas
+      - matplotlib
+      - python-dotenv
+      - pydicom
+      - opencv-python
+      - cookiecutter
+      - sklearn
+      - kaggle
+      - structlog
+      - azureml-core
+      - docker
+      - pypiwin32
